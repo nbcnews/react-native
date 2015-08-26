@@ -338,11 +338,12 @@ var ScrollResponderMixin = {
    * a touch has just started or ended.
    */
   scrollResponderIsAnimating: function(): boolean {
-    var now = Date.now();
-    var timeSinceLastMomentumScrollEnd = now - this.state.lastMomentumScrollEndTime;
-    var isAnimating = timeSinceLastMomentumScrollEnd < IS_ANIMATING_TOUCH_START_THRESHOLD_MS ||
-      this.state.lastMomentumScrollEndTime < this.state.lastMomentumScrollBeginTime;
-    return isAnimating;
+    // var now = Date.now();
+    // var timeSinceLastMomentumScrollEnd = now - this.state.lastMomentumScrollEndTime;
+    // var isAnimating = timeSinceLastMomentumScrollEnd < IS_ANIMATING_TOUCH_START_THRESHOLD_MS ||
+    //   this.state.lastMomentumScrollEndTime < this.state.lastMomentumScrollBeginTime;
+    // return isAnimating;
+    return false;
   },
 
   /**
